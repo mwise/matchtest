@@ -32,7 +32,7 @@ set :scm, :git
 set :branch, "master"
 set :scm_user, 'deploy'
 set :scm_passphrase, "gumby1234"
-set :repository, "git@github.com:mwise/match_test.git"
+set :repository, "git@github.com:mwise/matchtest.git"
 set :deploy_via, :remote_cache
 
 #############################################################

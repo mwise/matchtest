@@ -1,0 +1,53 @@
+<p>
+  <b>First name:</b>
+  <%=h @person.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%=h @person.last_name %>
+</p>
+
+<p>
+  <b>Address 1:</b>
+  <%=h @person.address_1 %>
+</p>
+
+<p>
+  <b>Address 2:</b>
+  <%=h @person.address_2 %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%=h @person.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%=h @person.state %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%=h @person.zip %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%=h @person.height %>
+</p>
+
+<p>
+  <b>Weight:</b>
+  <%=h @person.weight %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%=h @person.age %>
+</p>
+
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>

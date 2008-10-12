@@ -9,8 +9,46 @@
 		<meta name="robots" content="all" />	
 		<meta name="resource-type" content="document" />
 		<meta name="MSSmartTagsPreventParsing" content="true" />
-		<%= stylesheet_link_tag 'base' %>
+		<%= stylesheet_link_tag 'base', 'matchable' %>
 		<%= javascript_include_tag :defaults %>
+		
+		  <link rel="stylesheet" href="http://dev.jquery.com/view/tags/ui/latest/themes/flora/flora.all.css" type="text/css" media="screen" title="Flora (Default)">
+    <script type="text/javascript" src="http://dev.jquery.com/view/tags/ui/latest/ui/ui.core.js"></script>
+    <script type="text/javascript" src="http://dev.jquery.com/view/tags/ui/latest/ui/ui.slider.js"></script>
+    
+		
+		<script>
+    $(document).ready(function(){
+      //$(".matchable_slider").slider();
+
+      $(".matchable_slider").each(function(i){
+      });
+     
+      $(".matchable_slider").slider({
+  			'slide': function(e, ui){
+  			  var atr = "#" + $(this).attr('input_id'); 
+  				$(atr).val(ui.value);
+  				//alert($(e).attr('input_id'));
+  			}
+  		});
+ /*
+  		$(".slider-input").attr("value",slider1Value);
+
+  		$('.slider-input').blur(function(){
+  			var slider1Value = +this.value; 
+  			if(slider1Value >= slider1Min && slider1Value <= slider1Max){
+  				$('#example').slider('moveTo',slider1Value);
+  			}else{
+  				alert('Please enter a value between '+slider1Min+' and '+slider1Max);
+  				return false;
+  			}
+  		}); */
+  		
+      
+      
+    });
+    </script>
+    
 	</head>
 	<body>
 		<div id="container">

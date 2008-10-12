@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @truck.name %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%=h @truck.year %>
+</p>
+
+<p>
+  <b>Transmission:</b>
+  <%=h @truck.transmission %>
+</p>
+
+
+<%= link_to 'Edit', edit_truck_path(@truck) %> |
+<%= link_to 'Back', trucks_path %>
