@@ -1,0 +1,19 @@
+%h1 Listing matchable_attributes
+
+%table
+  %tr
+    %th Name
+    %th Description
+
+- for matchable_attribute in @matchable_attributes 
+  %tr
+    %td=h matchable_attribute.name 
+    %td=h matchable_attribute.description 
+    %td= link_to 'Show', matchable_attribute 
+    %td= link_to 'Edit', edit_matchable_attribute_path(matchable_attribute) 
+    %td= link_to 'Destroy', matchable_attribute, :confirm => 'Are you sure?', :method => :delete 
+
+
+= link_to 'New matchable_attribute', new_person_matchable_attribute_path 
+%br
+= params[:person_id]

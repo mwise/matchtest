@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @matchable_attribute.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @matchable_attribute.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_matchable_attribute_path(@matchable_attribute) %> |
+<%= link_to 'Back', matchable_attributes_path %>

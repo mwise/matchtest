@@ -4,6 +4,7 @@ module MatchableHelper
   
   def matchable_fields_for(object)
     str = "<h3>#{object.class} attribute weights: </h3>"
+    
     object.matchable_columns.each do |col|
       str << "<div class='slider-container'>"
       str <<   label(object, "#{col.name} weight: ")

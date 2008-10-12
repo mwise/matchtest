@@ -1,0 +1,24 @@
+<h1>Listing matchable_attributions</h1>
+
+<table>
+  <tr>
+    <th>Matchable</th>
+    <th>Matchable attribute</th>
+    <th>Value</th>
+  </tr>
+
+<% for matchable_attribution in @matchable_attributions %>
+  <tr>
+    <td><%=h matchable_attribution.matchable_id %></td>
+    <td><%=h matchable_attribution.matchable_attribute_id %></td>
+    <td><%=h matchable_attribution.value %></td>
+    <td><%= link_to 'Show', matchable_attribution %></td>
+    <td><%= link_to 'Edit', edit_matchable_attribution_path(matchable_attribution) %></td>
+    <td><%= link_to 'Destroy', matchable_attribution, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New matchable_attribution', new_matchable_attribution_path %>

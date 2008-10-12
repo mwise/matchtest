@@ -9,7 +9,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081012192750) do
+ActiveRecord::Schema.define(:version => 20081012205545) do
+
+  create_table "matchable_attributes", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "matchable_attributions", :force => true do |t|
+    t.integer  "matchable_id"
+    t.integer  "matchable_attribute_id"
+    t.integer  "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "open_id_authentication_associations", :force => true do |t|
     t.integer "issued"

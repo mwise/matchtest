@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  matchable_id: 1
+  matchable_attribute_id: 1
+  value: 1
+
+two:
+  matchable_id: 1
+  matchable_attribute_id: 1
+  value: 1

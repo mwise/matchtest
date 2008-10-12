@@ -1,0 +1,58 @@
+%table
+  %tr
+    %td
+      %h1 Editing person
+
+      - form_for(@person) do |f| 
+        = f.error_messages 
+
+        %p
+          = f.label :first_name 
+          = f.text_field :first_name 
+  
+        %p
+          = f.label :last_name 
+          = f.text_field :last_name 
+  
+        %p
+          = f.label :address_1 
+          = f.text_field :address_1 
+  
+        %p
+          = f.label :address_2 
+          = f.text_field :address_2 
+  
+        %p
+          = f.label :city 
+          = f.text_field :city 
+  
+        %p
+          = f.label :state 
+          = f.text_field :state 
+  
+        %p
+          = f.label :zip 
+          = f.text_field :zip 
+  
+        %p
+          = f.label :height 
+          = f.text_field :height 
+  
+        %p
+          = f.label :weight 
+          = f.text_field :weight 
+  
+        %p
+          = f.label :age 
+          = f.text_field :age 
+  
+        %p
+          = f.submit "Update" 
+        %p
+          = link_to 'Show', @person  |
+          = link_to 'Back', people_path 
+    %td
+      = matchable_fields_for(@person) 
+
+          
+  

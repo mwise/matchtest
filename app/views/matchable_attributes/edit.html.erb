@@ -1,0 +1,23 @@
+<h1>Editing matchable_attribute</h1>
+
+<% form_for(@matchable_attribute) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.hidden_field :person_id, params[:person_id] %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @matchable_attribute %> |
+<%= link_to 'Back', person_matchable_attributes_path(params[:person_id]) %>

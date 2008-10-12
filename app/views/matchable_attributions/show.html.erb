@@ -1,0 +1,18 @@
+<p>
+  <b>Matchable:</b>
+  <%=h @matchable_attribution.matchable_id %>
+</p>
+
+<p>
+  <b>Matchable attribute:</b>
+  <%=h @matchable_attribution.matchable_attribute_id %>
+</p>
+
+<p>
+  <b>Value:</b>
+  <%=h @matchable_attribution.value %>
+</p>
+
+
+<%= link_to 'Edit', edit_matchable_attribution_path(@matchable_attribution) %> |
+<%= link_to 'Back', matchable_attributions_path %>

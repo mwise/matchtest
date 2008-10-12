@@ -1,4 +1,7 @@
 class Person < ActiveRecord::Base
+  has_many :matchable_attributes, :through=>:matchable_attributions
+  has_many :matchable_attributions, :foreign_key=>:matchable_id
+  
   def matchable_columns
     cols = []
     self.class.columns.each do |column|
@@ -7,6 +10,10 @@ class Person < ActiveRecord::Base
       end
     end
     cols
+  end
+  
+  def self.find_matches
+    
   end
   
 end

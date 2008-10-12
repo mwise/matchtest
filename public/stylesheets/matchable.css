@@ -1,4 +1,31 @@
 .slider-container{
 	border: 1px solid grey;
 	margin: 5px 5px 5px 15px;
+	padding: 5px;
+	
+}
+
+.slider-container label{
+
+}
+
+
+#content{
+	background: #ede3a1;
+}
+
+.mynav ul{
+	list-style-type: none;
+	margin: 5px;
+}
+
+.mynav ul li{
+	display: inline;
+	margin-right: 10px;
+	text-transform: uppercase;
+}
+
+.mynav ul li a{
+	color: #262;
+	font-weight: bold;
 }

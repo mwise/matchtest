@@ -1,24 +1,26 @@
-<h1>Editing truck</h1>
-
-- form_for(@truck) do |f| 
-  = f.error_messages
-  %p
-    = f.label :name 
-    = f.text_field :name 
-  %p  
-    = f.label :year 
-    = f.text_field :year 
-  %p  
-    = f.label :transmission 
-    = f.text_field :transmission 
-  %p
-    = f.submit "Update" 
-
-%p
-  = matchable_fields_for(@truck)
+%table
+  %tr
+    %td
+      %h1 Editing truck
+      - form_for(@truck) do |f| 
+        = f.error_messages
+        %p
+          = f.label :name 
+          = f.text_field :name 
+        %p  
+          = f.label :year 
+          = f.text_field :year 
+        %p  
+          = f.label :transmission 
+          = f.text_field :transmission 
+        %p
+          = f.submit "Update" 
+        %p
+          = link_to 'Show', @truck  
+          = link_to 'Back', trucks_path 
+    %td
+      %p
+        = matchable_fields_for(@truck)
   
     
-%p
-  = link_to 'Show', @truck  
-  = link_to 'Back', trucks_path 
 

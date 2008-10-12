@@ -1,0 +1,100 @@
+/* 
+A CSS Framework by Mike Stenhouse of Content with Style 
+-------------------------------------------------------
+
+Copyright (c) 2005, Mike Stenhouse of Content with Style
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+    * Neither the name of CSS Framework nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+/* local_nav */
+    div#local_nav {
+			border-color: #D0d0d0;
+			border-size: 1px;
+			border-width: 1px;
+    }
+    * html div#local_nav {
+        /* hide ie/mac \*/
+        height: 1%;
+        /* end hide */
+    }
+    div#local_nav div.wrapper {
+        width: 100%;
+        
+        background: #d0d0d0;
+    }
+		div#local_nav .header_bar {
+			font: bold 14px Arial;
+			color: white;
+			background: black url("../../../../i/titlebar.png") repeat-x center left;
+			margin-bottom: 10px; /*bottom spacing between header and rest of content*/
+			text-transform: uppercase;
+			padding: 4px 0 4px 10px; /*header text is indented 10px*/
+		}
+    div#local_nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			margin-bottom: 8px; /*bottom spacing between each UL and rest of content*/
+    }
+    div#local_nav li {
+			padding-bottom: 2px; /*bottom spacing between menu items*/
+			margin: 0 0 0 5px;
+    }
+    * html div#local_nav li {
+        /* hide ie/mac \*/
+        height: 1%;
+        /* end hide */
+    }
+    div#local_nav li.last {
+        
+    }
+    div#local_nav a,
+    div#local_nav a:link,
+    div#local_nav a:active,
+    div#local_nav a:visited {
+			color: #24618E;
+			background: url("../../../../i/arrowbullet.png") no-repeat center left; /*custom bullet list image*/
+			display: block;
+			padding: 2px 0;
+			padding-left: 19px; /*link text is indented 19px*/
+			text-decoration: none;
+			font-weight: bold;
+			border-bottom: 1px solid #dadada;
+			font-size: 90%;
+    }
+    div#local_nav a:hover {
+			color: #24618E;
+			background-color: #F3F3F3;
+    }
+    div#local_nav li.selected {
+
+    }
+    div#local_nav li.selected a,
+    div#local_nav li.selected a:link,
+    div#local_nav li.selected a:active,
+    div#local_nav li.selected a:visited,
+    div#local_nav li.selected a:hover {
+			color: #24618E;
+			background-color: #F3F3F3;
+
+    }
+/* END local_nav */

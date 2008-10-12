@@ -1,5 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :people
+  map.resources :matchable_attributions
+
+  map.resources :matchable_attributes
+
+  map.resources :people, :has_many=>[:matchable_attributions, :matchable_attributes]
 
   map.resources :trucks
  
