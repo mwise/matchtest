@@ -1,0 +1,21 @@
+body {
+  background: #333; }
+
+#container {
+  background: #ddd;
+  width: 900px;
+  margin: 0 auto 0 auto; }
+  #container #header #logo {
+    width: 200;
+    float: left; }
+  #container #header #nav {
+    width: 700;
+    float: left; }
+  #container #content %p {
+    margin: 1em 1em; }
+  #container #sidebar_left {
+    float: left; }
+  #container #sidebar_right {
+    float: right; }
+  #container #footer {
+    font-size: .8em; }

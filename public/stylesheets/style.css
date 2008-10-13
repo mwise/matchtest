@@ -1,0 +1,60 @@
+/*
+NoMethodError: You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.tabs
+
+Backtrace:
+/Library/Ruby/Gems/1.8/gems/haml-2.1.0/lib/sass/engine.rb:153:in `tree'
+/Library/Ruby/Gems/1.8/gems/haml-2.1.0/lib/sass/engine.rb:117:in `render_to_tree'
+/Library/Ruby/Gems/1.8/gems/haml-2.1.0/lib/sass/engine.rb:93:in `render'
+/Library/Ruby/Gems/1.8/gems/haml-2.1.0/lib/sass/plugin.rb:75:in `update_stylesheet'
+/Library/Ruby/Gems/1.8/gems/haml-2.1.0/lib/sass/plugin.rb:60:in `update_stylesheets'
+/Library/Ruby/Gems/1.8/gems/haml-2.1.0/lib/sass/plugin.rb:55:in `each'
+/Library/Ruby/Gems/1.8/gems/haml-2.1.0/lib/sass/plugin.rb:55:in `update_stylesheets'
+/Library/Ruby/Gems/1.8/gems/haml-2.1.0/lib/sass/plugin.rb:53:in `each'
+/Library/Ruby/Gems/1.8/gems/haml-2.1.0/lib/sass/plugin.rb:53:in `update_stylesheets'
+/Library/Ruby/Gems/1.8/gems/haml-2.1.0/lib/sass/plugin/rails.rb:16:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:389:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:149:in `handle_request'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:107:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:35:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+/Library/Ruby/Gems/1.8/gems/rails-2.1.1/lib/commands/servers/mongrel.rb:64
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+/Library/Ruby/Gems/1.8/gems/rails-2.1.1/lib/commands/server.rb:39
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+script/server:3
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "NoMethodError: You have a nil object when you didn't expect it!\A The error occurred while evaluating nil.tabs"; }

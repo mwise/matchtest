@@ -1,6 +1,7 @@
 development: &non_production_settings
   site_url: http://localhost:3000
-  site_name: Matching Test
+  site_name: FeedMatcher
+  footer: Copyright ©2008 FeedMatcher
   admin_email: markmediadude@gmail.com
   
 test:
@@ -8,10 +9,12 @@ test:
 
 staging:
   site_url: http://staging.example.com
-  site_name: Bort
+  site_name: STAGING - FeedMatcher
+  footer: Copyright ©2008 FeedMatcher
   admin_email: bort@bort.com  
   
 production:
-  site_url: http://matchtest.markwise.info
-  site_name:  Match test
+  site_url: http://feedmatcher.com
+  site_name:  FeedMatcher
+  footer: Copyright ©2008 FeedMatcher
   admin_email: markmediadude@gmail.com
